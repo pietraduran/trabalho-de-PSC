@@ -23,4 +23,10 @@ public class Pessoa {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+
+    public void exibirDetalhes() {
+        System.out.println("Pessoa:");
+        System.out.println("Nome: " + nome);
+        System.out.println("CPF: " + cpf);
+    }
 }
