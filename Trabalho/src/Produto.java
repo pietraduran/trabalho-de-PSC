@@ -42,3 +42,29 @@ public class Produto {
         return "Produto -> " + "nome =" + Nome + " , categoria =" + Categoria + " , preco = R$" + Preco + " , quantDeEstoque = " + QuantDeEstoque + " .";
     }
 }
+public void armazenamentoProduto(){
+
+    private ArrayList<Produto> produtos;
+    private Scanner scanner = new Scanner(System.in);
+}
+
+public void adicionarProduto() {
+    System.out.print("=========== ADICIONAR PRODUTO ===========");
+    
+    System.out.println("Digite o nome do produto ");
+    String nome = scanner.nextLine();
+    
+    System.out.println("Digite a categoria do produto ");
+    String categoria = scanner.nextLine();
+}
+    public void consultarProduto() {
+        System.out.println("Digite o nome para consulta");
+        String Nome = getNome();
+
+       if (Nome != null) {
+            System.out.println("Produto já cadastrado.");
+
+        } else {
+        System.out.println("Produto inexistente.");
+       }
+    }
