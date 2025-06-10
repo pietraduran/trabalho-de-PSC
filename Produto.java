@@ -1,15 +1,9 @@
-package Produto;
-
 public class Produto {
     private String Nome, Categoria;
     private double Preco;
     private int QuantDeEstoque;
-
-    public void Produto(){
-
-    }
     
-    public void Produto(String nome, String categoria,double preco, int quantDeEstoque){
+    public Produto(String nome, String categoria,double preco, int quantDeEstoque){
         this.Nome = nome;
         this.Categoria = categoria;
         this.Preco = preco;
