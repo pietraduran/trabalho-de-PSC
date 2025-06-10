@@ -1,13 +1,26 @@
-public class Funcionario extends Pessoa {
-
+public class Funcionario {
+    private String nome;
+    private String cpf;
+    
     public Funcionario(String nome, String cpf) {
-        super(nome, cpf);
+        this.nome = nome;
+        this.cpf = cpf;
     }
-
-    @Override
-    public void exibirDetalhes() {
+    
+    public void exibirDetalhes() { 
+        
         System.out.println("Funcionário:");
         System.out.println("Nome: " + getNome());
         System.out.println("CPF: " + getCpf());
+    }
+    
+
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public String getCpf() {
+        return cpf;
     }
 }
